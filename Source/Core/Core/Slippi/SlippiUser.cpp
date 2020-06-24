@@ -152,7 +152,7 @@ void SlippiUser::UpdateApp()
 	WARN_LOG(SLIPPI, "Executing app update command: %s", command);
 	RunSystemCommand(command);
 #else
-	PanicAlertT("Auto update is not available for macOS and Linux, please update manually.");
+	CriticalAlertT("Auto update is not available for macOS and Linux, please update manually.");
 #endif
 }
 
