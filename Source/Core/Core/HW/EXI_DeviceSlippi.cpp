@@ -1959,7 +1959,7 @@ void CEXISlippi::handleLogOutRequest()
 
 void CEXISlippi::handleUpdateAppRequest()
 {
-#ifndef LINUX_LOCAL_DEV
+#ifdef _WIN32
 	main_frame->LowerRenderWindow();
 	user->UpdateApp();
 	main_frame->DoExit();
